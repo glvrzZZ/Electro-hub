@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Cart({ cartItems, removeFromCart, updateQuantity }) {
-  // Вычисляем общую стоимость товаров в корзине
+  
   const total = cartItems.reduce((sum, item) => {
     return sum + item.product.price * item.quantity;
   }, 0);
@@ -11,8 +11,8 @@ export default function Cart({ cartItems, removeFromCart, updateQuantity }) {
       style={{
         maxWidth: 800,
         margin: '0 auto',
-        color: '#fff', // Белый цвет текста для контраста с темным фоном
-        backgroundColor: '#1e1e1e', // Темный фон для контейнера корзины
+        color: '#fff', 
+        backgroundColor: '#1e1e1e', 
         padding: 20,
         borderRadius: 8,
         boxShadow: '0 0 10px rgba(0,0,0,0.7)',

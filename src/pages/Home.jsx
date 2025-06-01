@@ -5,7 +5,7 @@ import { fetchCategories, fetchManufacturers, fetchProducts } from '../utils/api
 import { Box, Grid, Pagination, CircularProgress, Typography, Container, useMediaQuery, useTheme } from '@mui/material';
 import CategoryGrid from '../components/CategoryGrid';
 import FlyingStars from '../components/FlyingStars';
-import { useAuth } from '../context/AuthContext'; // Импортируем контекст аутентификации
+import { useAuth } from '../context/AuthContext'; 
 
 const CATEGORY_ICONS = {
   'Смартфоны': '📱',
@@ -34,7 +34,7 @@ export default function Home() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const { addToCart } = useAuth(); // Получаем функцию для добавления в корзину
+  const { addToCart } = useAuth();
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -124,7 +124,7 @@ export default function Home() {
     addToCart(product);
   };
 
-  // ✅ Отображение ошибки
+ 
   if (error) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="50vh" sx={{ backgroundColor: '#121212', color: '#ff4d4f', px: 3, zIndex: 2 }}>

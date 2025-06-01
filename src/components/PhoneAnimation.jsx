@@ -14,8 +14,8 @@ export default function PhoneAnimation() {
 const styles = {
   container: {
     position: 'fixed',
-    top: '10px',  // Расположим элемент сверху
-    right: '10px',  // Сдвигаем вправо
+    top: '10px',  
+    right: '10px',  
     zIndex: 10,
     display: 'flex',
     alignItems: 'center',
@@ -25,12 +25,12 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    animation: 'phoneRing 2s infinite',  // Добавляем анимацию для колебаний
+    animation: 'phoneRing 2s infinite',  
   },
   phoneImage: {
     width: '50px',
     height: '50px',
-    animation: 'ringing 1s ease-in-out infinite',  // Мелкая анимация для телефона
+    animation: 'ringing 1s ease-in-out infinite', 
   },
   text: {
     color: '#fff',
@@ -38,7 +38,7 @@ const styles = {
     fontSize: '14px',
     fontWeight: 'bold',
     textAlign: 'center',
-    animation: 'textBounce 1s infinite',  // Анимация текста
+    animation: 'textBounce 1s infinite',  
   },
 };
 

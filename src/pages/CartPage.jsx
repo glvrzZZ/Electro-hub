@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAuth } from '../context/AuthContext'; // путь подставь свой
+import { useAuth } from '../context/AuthContext'; 
 import Cart from '../components/Cart';
 import DeliveryOptions from '../components/DeliveryOptions';
 import { Link } from 'react-router-dom';

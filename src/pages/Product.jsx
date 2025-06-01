@@ -32,7 +32,7 @@ const Product = ({ addToCart }) => {
   const [activeTab, setActiveTab] = useState(0);
   const [selectedImage, setSelectedImage] = useState(0);
 
-  // Реф на изображение товара для анимации
+  
   const productImageRef = useRef(null);
 
   useEffect(() => {
@@ -107,7 +107,7 @@ const Product = ({ addToCart }) => {
     setQuantity(number);
   };
 
-  // Функция анимации "улетающего" изображения в корзину
+  
   const animateFlyToCart = () => {
     const cartIcon = document.getElementById('cart-icon');
     const image = productImageRef.current;
@@ -155,7 +155,7 @@ const Product = ({ addToCart }) => {
         <Grid item xs={12} md={6}>
           <Card sx={{ mb: 2 }}>
             <CardMedia
-              ref={productImageRef} // <- важный реф для анимации
+              ref={productImageRef} 
               component="img"
               height="500"
               image={(images && images[selectedImage]?.image_url) || '/placeholder-product.jpg'}

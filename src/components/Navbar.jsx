@@ -28,7 +28,7 @@ export default function Navbar() {
     navigate('/');
   }, [logout, navigate, handleMenuClose]);
 
-  // Generate random stars for background animation
+  
   useEffect(() => {
     const container = starsContainerRef.current;
     const stars = [];

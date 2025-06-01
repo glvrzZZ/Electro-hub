@@ -1,4 +1,3 @@
-// pages/Profile.jsx
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Container, Paper, List, ListItem, ListItemText, Button } from '@mui/material';
 
@@ -8,18 +7,18 @@ const Profile = () => {
   const [addresses, setAddresses] = useState([]);
 
   useEffect(() => {
-    // Пример данных пользователя, замените на запрос к API
+    
     const userData = { name: 'Иван Иванов', email: 'ivan@mail.com' }; 
     setUser(userData);
 
-    // Пример истории заказов
+    
     const userOrders = [
       { id: 1, date: '2025-05-01', total: '5000 руб.' },
       { id: 2, date: '2025-06-10', total: '2500 руб.' }
     ];
     setOrders(userOrders);
 
-    // Пример адресов
+    
     const userAddresses = [
       { id: 1, address: 'г. Санкт-Петербург, ул. Электронная, д. 5' },
       { id: 2, address: 'г. Москва, ул. Технопарковая, д. 15' }

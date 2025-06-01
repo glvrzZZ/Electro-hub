@@ -14,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     const success = login(username, password);
     if (success) {
-      navigate('/'); // ⬅️ Перенаправляем на главную после входа
+      navigate('/'); 
     } else {
       setError('Неверный логин или пароль');
     }

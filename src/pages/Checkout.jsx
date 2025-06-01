@@ -17,10 +17,10 @@ const Checkout = ({ cartItems }) => {
 
   const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
-  // Рекомендуется добавить функцию отправки формы (submit)
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Здесь должна быть логика отправки заказа
+   
     alert('Заказ подтверждён! Спасибо!');
   };
 

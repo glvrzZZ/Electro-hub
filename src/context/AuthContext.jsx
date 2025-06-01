@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Загрузка user и cart из localStorage при монтировании
+  
   useEffect(() => {
     try {
       const storedUser = localStorage.getItem('user');
@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  // Сохраняем cart в localStorage, когда он изменяется и загрузка завершена
+  
   useEffect(() => {
     if (!loading) {
       try {
@@ -47,13 +47,13 @@ export const AuthProvider = ({ children }) => {
   };
 
   const addToCart = (product, quantity = 1) => {
-    if (loading) return; // не изменяем пока грузим данные
+    if (loading) return; 
     if (quantity <= 0) return;
 
     setCart(prev => {
       const index = prev.findIndex(item => item.product.product_id === product.product_id);
       if (index !== -1) {
-        // Создаём новый массив с обновлённым количеством, без мутаций
+        
         return prev.map((item, i) =>
           i === index
             ? { ...item, quantity: item.quantity + quantity }

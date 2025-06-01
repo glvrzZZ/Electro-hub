@@ -55,7 +55,7 @@ export default function FlyingStars() {
           height: '100%',
           pointerEvents: 'none',
           zIndex: -1,
-          backgroundColor: 'transparent', // Убираем фон
+          backgroundColor: 'transparent',
           overflow: 'hidden',
         }}
       />

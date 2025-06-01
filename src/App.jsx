@@ -1,21 +1,20 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider, CssBaseline } from '@mui/material';
-import { darkTheme } from './styles/theme'; // Импорт темы
+import { darkTheme } from './styles/theme'; 
 
-import { useAuth } from './context/AuthContext'; // Контекст авторизации
+import { useAuth } from './context/AuthContext'; 
 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import CartPage from './pages/CartPage';
 import Checkout from './pages/Checkout';
-import Login from './pages/Login'; // Страница входа
-import Profile from './pages/Profile'; // Страница профиля
+import Login from './pages/Login'; 
+import Profile from './pages/Profile'; 
 
-import { AuthProvider } from './context/AuthContext'; // Контекст для корзины
-import FlyingStars from './components/FlyingStars'; // Звезды на фоне
-
+import { AuthProvider } from './context/AuthContext'; 
+import FlyingStars from './components/FlyingStars'; 
 function App() {
   return (
     <AuthProvider>

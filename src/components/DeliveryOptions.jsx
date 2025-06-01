@@ -16,8 +16,8 @@ const DeliveryOptions = () => {
       style={{ 
         padding: 20, 
         margin: '20px 0', 
-        backgroundColor: '#222',  // тёмный фон
-        color: '#eee',            // светлый текст чуть светлее
+        backgroundColor: '#222', 
+        color: '#eee',            
         borderRadius: 8,
       }}
     >
@@ -71,11 +71,11 @@ const DeliveryOptions = () => {
       <Button
         variant="contained"
         style={{ 
-          backgroundColor: '#1976d2',  // синий акцент
+          backgroundColor: '#1976d2',  
           color: '#fff',
           marginTop: 20,
           borderRadius: 6,
-          textTransform: 'none',       // чтобы текст кнопки не был капсом
+          textTransform: 'none',       
           fontWeight: 'bold',
         }}
       >
